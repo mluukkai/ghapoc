@@ -19,5 +19,3 @@ jobs:
       with:
         add: 'random.txt'
         message: New version release for gitops-app ${{ github.sha }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
