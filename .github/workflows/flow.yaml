@@ -14,16 +14,8 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
     - name: create a file with random content
-      run: echo $RANDOM > random.txt
+      run: date > random2.txt
     - uses: EndBug/add-and-commit@v9
       with:
-        add: 'random.txt'
+        add: 'random2.txt'
         message: New version release for gitops-app ${{ github.sha }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        branch: daily-contribution
-        # Set the Git credentials - replace this with your own secrets
-        github_token: ${{ secrets.GH_TOKEN }}
