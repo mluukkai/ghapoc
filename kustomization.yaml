@@ -5,4 +5,4 @@ resources:
 images:
 - name: PROJECT/IMAGE
   newName: mluukkai/pock
-  newTag: 0007087cd38042db73ad989a9edfa5bae7a6c519
+  newTag: cc32d5f6ca296e465bb5ad9257fb9b0163ff38af
