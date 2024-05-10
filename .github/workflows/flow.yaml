@@ -3,7 +3,7 @@ name: do something
 on:
   push:
     branches:
-      - main
+      - tmp
 
 jobs:
   build:
