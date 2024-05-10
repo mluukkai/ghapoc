@@ -4,4 +4,4 @@ resources:
 - manifests/deployment.yaml
 images:
 - name: PROJECT/IMAGE
-  newName: jakousa/dwk-4-gitop
+  newName: mluukkai/pock-d7351aabf99c57304d636d9d3904cf3df4805c1e
