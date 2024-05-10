@@ -4,4 +4,5 @@ resources:
 - manifests/deployment.yaml
 images:
 - name: PROJECT/IMAGE
-  newName: mluukkai/pock-c88a31d0a950cdef0e9f1bbe64d0c6354ea0be89
+  newName: mluukkai/pock
+  newTag: 0007087cd38042db73ad989a9edfa5bae7a6c519
