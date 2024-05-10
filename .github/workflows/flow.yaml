@@ -19,3 +19,11 @@ jobs:
       with:
         add: 'random.txt'
         message: New version release for gitops-app ${{ github.sha }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: daily-contribution
+        # Set the Git credentials - replace this with your own secrets
+        github_token: ${{ secrets.GH_TOKEN }}
